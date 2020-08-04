@@ -60,7 +60,7 @@ To test the video, everything we gone through will be used. In total there is X 
 
 5. Compile all the pics into one video.
 
-Doing this led to the following video(That i made to a GIF, to see full video - Click here):
+Doing this led to the following video(That i made to a GIF, to see full video - Click [here](https://www.youtube.com/watch?v=nFuTIPUOfTQ&feature=youtu.be)):
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/62875997/89130464-5a9cce00-d505-11ea-9bcd-2fa19e2cd285.gif)
 
