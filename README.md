@@ -7,6 +7,7 @@
 4. [ Identify the cars ](#id)
 5. [ Find Free Spots ](#Empty)
 6. [ Test on the Video  ](#Test)
+7. [ Summary ](#Summary)
 
 <a name="Intro"></a>
 ## Introduction
@@ -63,6 +64,13 @@ Doing this led to the following video(That i made to a GIF, to see full video - 
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/62875997/89130464-5a9cce00-d505-11ea-9bcd-2fa19e2cd285.gif)
 
+This looks great! It seems that my model classifies almost everything right. But we need some kind of measurement to evaluate the performance. My solution is to randomly pick out 10 frames and calculate the mean percent of prediction right. In a perfect world, one would go through every frame and calculate the accuracy, but this will do. The frames that got randomly picked out are: 12, 13, 61, 70, 93, 135, 164, 193, 194, 200. In those frames, the model predicted 530 of 540 parking spot right. That is an accuracy of 99.8%! 
 
+<a name="Summary"></a>
+## Summary
+The goal of this project was to find a cheap, qucik and accurate way to recognize free- and occupied parking spots. Through a R-CNN we got an accuracy of 99.8%. But is the model quick? On my macbook air form 2013, it takes around 1 minute from saving a frame as a picture to predict and paint it. I recon that on a newer computer this would take 30-40% faster. This leads me to conclude that the model is quick. 
 
+Now to the last question - could this be done in a cheap way? I think so! The only things one would need to actually apply this on a real parking spot is a computer, this model, internet and a webcame with a API function. Then one could make a program that, say every 5th minute, capture a picture from the webcame - sends it to the computer - the model predicts and paints the picture - send the pic to the owner(or perhaps an app that the users of the parking lot could use). Voila, problem solved!
+
+Thanks for reading!
 
